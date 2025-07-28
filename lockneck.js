@@ -1,7 +1,7 @@
 const CONFIG = {
   SCREEN: {
-    CENTER_X: 540,
-    CENTER_Y: 960,
+    CENTER_X: 1376,
+    CENTER_Y: 1032,
     FOV_RADIUS: 180,
     DEPTH_SCALE: 1000 // Scale for Z-axis conversion
   },
