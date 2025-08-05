@@ -61,7 +61,7 @@ const CONFIG = {
   },
   DRAG_HEADSHOT: {
     enabled: true,
-    dragThreshold: 10,
+    dragThreshold: 12,
     dragForce: 9999.0,
     transitionSmooth: 0.85,
     headSnapRadius: 13,
