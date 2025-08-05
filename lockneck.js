@@ -47,13 +47,13 @@ const CONFIG = {
   },
   AIM_ZONES: {
     neck: { radius: 15, priority: 10, bone: true },
-    head: { radius: 22, priority: 8, bone: false },
+    head: { radius: 22, priority: 8, bone: true },
     chest: { radius: 35, priority: 3, bone: false }
   },
   NECK_3D_LOCK: {
     enabled: true,
     lockRadius: 10,
-    lockForce: 3.2,
+    lockForce: 9999.0,
     magnetism: 2.5,
     boneTracking: true,
     quaternionCorrection: true,
@@ -62,15 +62,15 @@ const CONFIG = {
   DRAG_HEADSHOT: {
     enabled: true,
     dragThreshold: 8,
-    dragForce: 2.8,
+    dragForce: 9999.0,
     transitionSmooth: 0.85,
     headSnapRadius: 18,
     neckToHeadTransition: true,
     dragHistory: 3
   },
   SENSITIVITY: {
-    dpi: 400,
-    gameSensitivity: 50
+    dpi: 10000,
+    gameSensitivity: 1000
   },
   MODES: {
     manualOverride: false,
@@ -461,7 +461,7 @@ function mainLoopDemo(frameInputVector, headPositionVector3D) {
 // =========================================
 
 const inputVec = { x: 532, y: 948 }; // Gần tâm màn hình
-const headPos = new Vector3D(0.01, -0.04, 0.98); // Vị trí đầu enemy 3D
+const headPos = new Vector3D(-0.045697, -0.004478, -0.020043); // Vị trí đầu enemy 3D
 
 const result = mainLoopDemo(inputVec, headPos);
 
