@@ -11,15 +11,15 @@ const CONFIG = {
   },
   BONE_NECK: {
     position: {
-      x: -0.045697,
-      y: -0.004478,
-      z: 0.020043
+      x: -0.128512,
+      y: 0.0,
+      z: 0.0
     },
     rotation: {
-      x: -0.025817,
-      y: 0.08611,
-      z: -0.140211,
-      w: 0.986032
+      x: -0.012738,
+      y: -0.002122,
+      z: 0.164307,
+      w: 0.986325
     },
     scale: {
       x: 1.0,
@@ -52,7 +52,7 @@ const CONFIG = {
   },
   NECK_3D_LOCK: {
     enabled: true,
-    lockRadius: 360.0,
+    lockRadius: 9999.0,
     lockForce: 9999.0,
     magnetism: 9999.0,
     boneTracking: true,
@@ -70,7 +70,7 @@ const CONFIG = {
   },
   SENSITIVITY: {
     dpi: 10000,
-    gameSensitivity: 1000
+    gameSensitivity: 99999
   },
   MODES: {
     manualOverride: false,
