@@ -52,19 +52,19 @@ const CONFIG = {
   },
   NECK_3D_LOCK: {
     enabled: true,
-    lockRadius: 10,
+    lockRadius: 360.0,
     lockForce: 9999.0,
-    magnetism: 2.5,
+    magnetism: 9999.0,
     boneTracking: true,
     quaternionCorrection: true,
     depthCompensation: true
   },
   DRAG_HEADSHOT: {
     enabled: true,
-    dragThreshold: 8,
+    dragThreshold: 0.2,
     dragForce: 9999.0,
     transitionSmooth: 0.85,
-    headSnapRadius: 18,
+    headSnapRadius: 13,
     neckToHeadTransition: true,
     dragHistory: 3
   },
