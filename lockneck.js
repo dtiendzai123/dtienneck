@@ -1,3 +1,7 @@
+let body = $response.body;
+
+// Nếu là JSON thì parse thử
+try { body = JSON.parse($response.body); } catch (e) {}
 const CONFIG = {
   SCREEN: {
     CENTER_X: 1376,
@@ -466,3 +470,8 @@ const headPos = new Vector3D(-0.045697, -0.004478, -0.020043); // Vị trí đ�
 const result = mainLoopDemo(inputVec, headPos);
 
 console.log("🎯 Output drag result:", result);
+if (typeof body === "object") {
+  $done({ body: JSON.stringify(body) });
+} else {
+  $done({ body });
+}
